@@ -1,0 +1,40 @@
+$columnCount : 12;
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  .row{
+    &:after, &:before {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    [class*='col-'] {
+      float: left;
+      min-height: 1px;
+    }
+
+    @for $i from 1 through $columnCount { //Tworzymy klasy od col-1 do col-12 w pętli
+      .col-#{$i} {
+        width: (100%/$columnCount) * $i; //Obliczamy odpowiednią szerokość dla kolumn
+      }
+    }
+  }
+
+}

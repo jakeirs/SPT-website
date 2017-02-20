@@ -1,0 +1,163 @@
+// ---------> section partners <------------
+
+
+.next{          
+  background: url('../img/slider-arrow-right.svg') no-repeat;
+    }
+.prev{        
+     background: url('../img/slider-arrow-left.svg') no-repeat;
+  }
+    
+
+section#partners {
+  margin-top: 50px;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+}
+
+.sponsors--sliderbox, .friends--sliderbox {
+  display: none;
+}
+
+.partners--sliderbox, .sponsors--sliderbox, .friends--sliderbox {
+  margin-top: 30px;
+  width: 90%;
+  height: 100px;
+  // height: 140px;
+  float: left; 
+  // background: green;
+    img {
+      margin-right: 4vw; // na pełnym ekranie 65px
+      // width: 160px;
+      width: auto;
+      // height: 80px;
+      height: 80px;
+      display: inline-block;
+    }
+    // .title {
+    //   height: 200px;
+    // }
+    
+}
+
+section#partners .slider--arrowContainer {
+  z-index: 1;
+  width: 5%;
+  height: 140px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  // background: red;  
+}
+
+section#partners .slider-arrow {
+  width: 90%;
+  min-width: 45px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;   
+  cursor: pointer;
+}
+
+
+section#partners .next{ 
+  float: right;         
+  right: 0;
+    }
+
+// ---------> section contact <------------
+
+section#contact {
+  // height: 440px;
+  height: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+
+.iframe--googlemap {
+  width: 100%;
+  height: 50vh;
+  border: 0; 
+  pointer-events: none; // wyłącza wszelkie akcje z Mapy
+  // position: relative;
+}
+
+//  div contactowy
+
+.div--contact {
+  // width: 215px;
+  width: 100%;
+  height: 315px;
+  padding-top: 20px; // na pełnym ekranie 37px
+  padding-left: 44px;
+  padding-right: 37px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  font-size: 16px;  
+  font-weight: 100;
+  // position: absolute;
+  // top: 0;
+  // bottom: 0;
+  // right: 0;
+  // margin: auto;  
+  // margin-right: 80px;
+
+}
+
+.p--contact-heading {
+  font-weight: bold;
+  text-align: center;
+}
+
+.p--contact-tiny {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.div--contact-svg {
+  background-image: url(../img/contact-circle-arrow-black.svg);
+  width: 57px;
+  height: 57px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 26px;
+}
+
+// koniec div kontaktowy
+
+.p--footer {
+  // margin-top: 20px;
+  width: 100%;
+  float: right;
+  font-size: 12px;
+  text-align: right;
+
+}
+
+@media screen and (min-width: 768px) {
+    .div--contact {
+      width: 250px;
+      // width: 100%;
+      height: 375px;
+      padding-top: 20px; // na pełnym ekranie 37px
+      padding-left: 30px;
+      padding-right: 30px;
+      border-radius: 20px;
+      background-color: #FFFFFF;
+      font-size: 16px;  
+      font-weight: 100;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;  
+      margin-right: 5vw;
+
+  }
+}
