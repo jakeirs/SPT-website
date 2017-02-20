@@ -24,10 +24,8 @@ section#events {
 .events--content {
   margin-top: calc(6vw + 10px); 
   vertical-align:top;
-
     h3 {
-        margin-top: calc(2vw);
-        
+        margin-top: calc(2vw);        
     }
 
     time {      
@@ -45,7 +43,8 @@ section#events {
       height: 60vw;
       width: 90vw;
       object-fit: contain;
-      border-radius: 30px;      
+      border-radius: 30px;  
+      background-color: #000;    
     }
     .event--content-descrip {
       width: 90vw;
@@ -62,9 +61,12 @@ section#events {
   padding-left: 3vw;
 }
   .events--content {
-    display: inline-block;
     display: flex;
     margin-right: 3vw;
+    h3 {
+        margin-top: 0;   
+        text-align: left;     
+    }
     img {
       display: block;
       margin-left: auto;
