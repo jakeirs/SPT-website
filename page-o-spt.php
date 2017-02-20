@@ -36,7 +36,7 @@
                 <div class="team--sliderbox-content">
 
                 <?php the_post_thumbnail(); ?>
-                <p><?php the_title(); ?> </p>
+                <p class="name"><?php the_title(); ?> </p>
                 <div class="sliderbox-content-me">me</div>
                 <div class="details"><?php the_content(); ?></div>
                 
