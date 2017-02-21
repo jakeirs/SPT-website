@@ -14,6 +14,9 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/slick/slick-theme.css"/>
 <!----------- SLIDER SLICK // koniec // ---------->
 
+<!----------- LIGHTBOX ---------->
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/lightbox2/src/css/lightbox.css">
+
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/style.css">
     
    

@@ -99,6 +99,10 @@
 <script type="text/javascript" src="<?php bloginfo('template_directory');?>/slick/slick.min.js"></script>
 <script src="<?php bloginfo('template_directory');?>/js/slider.js"></script>
 <script src="<?php bloginfo('template_directory');?>/js/app.js"></script>
+
+  <!----------- lightbox ---------->
+<script src="<?php bloginfo('template_directory');?>/lightbox2/src/js/lightbox.js"></script>
+
 <?php wp_footer(); ?>
 
 </body>

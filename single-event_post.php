@@ -55,7 +55,7 @@
            
                <?php is_array($gallery_video);
                     foreach ($gallery_video as $video) {
-                        echo ' <iframe width="420" height="315" src="'.$video["wideo_wydarzenia"].'" ></iframe>';  
+                        echo ' <iframe width="420" height="315" allowfullscreen="allowfullscreen" src="'.$video["wideo_wydarzenia"].'" ></iframe>';  
                  }
              }   ?>             
                  

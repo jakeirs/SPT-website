@@ -27,7 +27,7 @@
              <?php $gallery_images = CFS()->get('galeria_zdjec_projekty');
                 is_array($gallery_images);
                     foreach ($gallery_images as $image) {
-                        echo ' <a href="'.$image["galeria_projekty"].'" data-lightbox="slider-ex4"/> <img src="'.$image["galeria_projekty"].'"/></a>';  
+                        echo ' <a href="'.$image["galeria_projekty"].'" data-lightbox="slider-ex4"> <img src="'.$image["galeria_projekty"].'"/></a>';  
                     }
                  ?>
                 
@@ -47,20 +47,13 @@
         <?php $gallery_video = CFS()->get('galeria_wideo_projekty');
                 is_array($gallery_video);
                     foreach ($gallery_video as $video) {
-                        echo ' <iframe width="420" height="315" src="'.$video["wideo_projekty"].'" ></iframe>';  
+                        echo ' <iframe width="420" height="315" allowfullscreen="allowfullscreen" src="'.$video["wideo_projekty"].'" ></iframe>';  
                     }
                  ?>
         </div>
 
   <?php  } ?> 
-               
-
-
-    
-             
-             
-
-
+ 
 
 <?php get_footer(); ?>
 
