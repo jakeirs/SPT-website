@@ -623,7 +623,7 @@ div.events-gallery--wrapper img {
 }
 
 div.events-gallery--wrapper img:hover {
-  transform: scale(1.6);
+  transform: scale(1.2);
 }
 
 section#events-video {
