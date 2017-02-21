@@ -232,6 +232,7 @@ div.events-video--wrapper {
    height: 61vw;    
   }    
 }
+@import 'phonesMichal.scss';
 
 @media screen and (min-width: 480px) {
   section#events-gallery {
@@ -273,6 +274,7 @@ div.events-video--wrapper {
         }
     }
 }
+@import 'tabletsMichal.scss';
 
 @media screen and (min-width: 768px) {
   section#events-gallery {
