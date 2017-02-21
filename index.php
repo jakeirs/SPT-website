@@ -35,12 +35,16 @@
        <section class="container mainImages">
            <div class="mainImagesWrapper">
                <div class="mainImagesEvents">
-                   <img class="mainImagesEventsLink" src="<?php bloginfo('template_directory')?>/img/icon-wydarzenia.svg">
-                   <h3>Wydarzenia</h3>
+                   <a href="projekty">
+                    <img class="mainImagesEventsLink" src="<?php bloginfo('template_directory')?>/img/icon-wydarzenia.svg">
+                    <h3>Wydarzenia</h3>
+                   </a> 
                </div>
                <div class="mainImagesProjects">
-                   <img class="mainImagesProjectsLink" src="<?php bloginfo('template_directory')?>/img/icon-projekty.svg">
-                   <h3>Projekty</h3>
+                   <a href="wydarzenia">
+                    <img class="mainImagesProjectsLink" src="<?php bloginfo('template_directory')?>/img/icon-projekty.svg">
+                    <h3>Projekty</h3>
+                   </a> 
                </div>
                <div class="mainImagesKnow">
                    <img class="mainImagesKnowLink" src="<?php bloginfo('template_directory')?>/img/icon-wiedza.svg">
