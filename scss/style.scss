@@ -12,6 +12,15 @@ section > h2 {
   text-transform: uppercase;
   font-size: 30px;  
 }
+
+a {
+  color: #000;
+  text-decoration: none; /* no underline */
+}
+a:hover {
+  color: #a8a8a8;
+}
+
 @import "about";
     
 // ---------> section events <------------
@@ -52,8 +61,11 @@ section#events {
       margin-left: auto;
       margin-right: auto; 
       text-align: justify;
-    }
+    }    
 }
+.events--content:hover h3 {
+      color: #a8a8a8; 
+    }
 
 @media screen and (min-width: 480px) {
   section#events {
