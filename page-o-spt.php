@@ -34,7 +34,7 @@
 
                 <?php the_post_thumbnail(); ?>
                 <p class="name"><?php the_title(); ?> </p>
-                <div class="sliderbox-content-me">me</div>
+                <a href="<?php echo CFS()->get( 'link_zespol' ); ?>"><div class="sliderbox-content-me">me</div></a>
                 <div class="details"><?php the_content(); ?></div>
                 
                 </div>
