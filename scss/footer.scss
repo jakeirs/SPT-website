@@ -22,21 +22,26 @@ section#partners {
 .partners--sliderbox, .sponsors--sliderbox, .friends--sliderbox {
   margin-top: 30px;
   width: 90%;
-  height: 100px;
+  height: 100px;  
   // height: 140px;
   float: left; 
   // background: green;
     img {
-      margin-right: 4vw; // na pełnym ekranie 65px
-      // width: 160px;
+      margin-right: 4vw; // na pełnym ekranie 65px      
       width: auto;
-      // height: 80px;
       height: 80px;
       display: inline-block;
     }
-    // .title {
-    //   height: 200px;
-    // }
+   .title {
+     margin-top: 30px;
+     margin-left: 90px;
+     padding-left: 40px;
+     font-size: 20px;
+     margin: 30px;
+     font-weight: 700;
+     font-style: italic;
+
+   }
     
 }
 

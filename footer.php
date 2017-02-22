@@ -6,8 +6,9 @@
         <div class="slider--arrowContainer">
             <div class="slider-arrow prev"></div>
         </div>
-        <div class="partners--sliderbox">     
-            <img class="title" src="<?php bloginfo('template_directory');?>/img/SPT_partnerzy.jpg"/>
+        <div class="partners--sliderbox">   
+            <p class="title">Partnerzy: </p>  
+            <!--<img class="title" src="<?php bloginfo('template_directory');?>/img/SPT_partnerzy.jpg"/>-->
              <?php 
               // wywołanie custom-post friends --> partnerzy
 				$args =  array( 
@@ -21,8 +22,8 @@
                 <?php the_post_thumbnail() ?>
                 
 				<?php endwhile; ?>  
-                
-                <img class="title" src="<?php bloginfo('template_directory');?>/img/SPT_mecenat.jpg"/>
+             <p class="title">Mecenat: </p>    
+                <!--<img class="title" src="<?php bloginfo('template_directory');?>/img/SPT_mecenat.jpg"/>-->
                 <?php                  
                   // wywołanie custom-post mecenat
 				$args =  array( 
@@ -36,8 +37,8 @@
                 <?php the_post_thumbnail() ?>
                 
 				<?php endwhile; ?>  
-                 <img class="title" src="<?php bloginfo('template_directory');?>/img/SPT_sponsorzy.jpg"/>            
-                
+                 <!--<img class="title" src="<?php bloginfo('template_directory');?>/img/SPT_sponsorzy.jpg"/>            -->
+                <p class="title">Współpraca: </p> 
                 <?php 
                 // wywołanie custom-post sponsory --> współpraca
 				$args =  array( 
