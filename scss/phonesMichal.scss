@@ -16,7 +16,7 @@ nav{
 }
 .stopSlide{
   height: 100%;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 @media (max-width: 420px){
 
@@ -26,6 +26,9 @@ nav{
     line-height: 2em;
     display: flex;
     align-items: center;
+    .magnifyingGlass{
+      display: none;
+    }
     .hamburger{
       line-height: 2em;
       width: 10%;
@@ -74,6 +77,28 @@ nav{
     input {
       width: 85%;
       height: 2em;
+    }
+
+    #cooperate, #PDF{
+      text-transform: none;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      &:hover:after{
+        visibility: hidden;
+
+      }
+    }
+    #PDF{
+      margin-left: 10px;
+      color: white;
+      background-color: #000;
+
+
+      span{
+        font-weight: 100;
+        font-size: 1.2em;
+      }
     }
   }
   .headerLogo{

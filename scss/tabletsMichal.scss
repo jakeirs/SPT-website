@@ -16,6 +16,9 @@
     line-height: 2em;
     display: flex;
     align-items: center;
+    .magnifyingGlass{
+      display: none;
+    }
     .hamburger{
       line-height: 2em;
       width: 10%;
@@ -30,7 +33,9 @@
 
     }
   }
-
+  #mobileMenu{
+    overflow-y: scroll !important;
+  }
   .mobileMenuWrapper{
     width: 100vw;
     height: 100vh;
@@ -38,9 +43,13 @@
     background-color: #a8a8a8;
     display: none;
     z-index: 22;
+
+
     nav{
       display: block;
       position: absolute;
+      overflow-y: scroll !important;
+
     }
     .navigation li {
       margin-bottom: 0.6em;
@@ -65,6 +74,27 @@
     input {
       width: 85%;
       height: 2em;
+    }
+    #cooperate, #PDF{
+      text-transform: none;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      &:hover:after{
+        visibility: hidden;
+
+      }
+    }
+    #PDF{
+      margin-left: 10px;
+      color: white;
+      background-color: #000;
+
+
+      span{
+        font-weight: 100;
+        font-size: 1.2em;
+      }
     }
   }
   .headerLogo{

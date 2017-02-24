@@ -11,12 +11,22 @@
     line-height: 2em;
     display: flex;
     align-items: center;
+    .magnifyingGlass{
+      height: 1.4em;
+      position: relative;
+      right: 7em;
+      bottom: 0.3em;
+    }
 
     input {
       width: 50%;
       height: 2em;
       margin: 30px auto;
-
+      border: none;
+      border-bottom: 4px solid black;
+      &:focus{
+        outline: none;
+      }
     }
   }
   .mobileMenuWrapper{
@@ -157,6 +167,47 @@
 
     }
   }
+  .navigationCooperate div {
+    padding-left: 1em;
+    padding-right: 1em;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    height: 80%;
+    text-align: center;
+  }
+  #cooperate, #PDF{
+    text-transform: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+      &:hover:after{
+        visibility: hidden;
+
+      }
+  }
+  #PDF{
+    color: white;
+
+
+    span{
+      font-weight: 100;
+      font-size: 1.2em;
+    }
+  }
+
+  .navigationPDF{
+
+
+    div{
+      //height: 25px ;
+      line-height: 1em;
+      padding-left: 0.4em;
+      padding-right: 0.4em;
+      padding-bottom: 0.2em;
+      background-color: #000000;
+    }
+  }
+
   .mainSlider{
     position: relative;
   }

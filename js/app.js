@@ -27,6 +27,7 @@ $(function(){
             $('.mobileMenuWrapper').removeClass('shown');
             $('.mobileMenuWrapper').addClass('hidden');
             $('body').removeClass('stopSlide');
+
         }else {
             $('.mobileMenuWrapper').fadeIn('fast');
             $('.mobileMenuWrapper').addClass('shown');

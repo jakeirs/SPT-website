@@ -8,6 +8,9 @@
     line-height: 2em;
     display: flex;
     align-items: center;
+    .magnifyingGlass{
+      display: none;
+    }
     .hamburger {
       line-height: 2em;
       width: 10%;
@@ -29,6 +32,7 @@
     background-color: #a8a8a8;
     display: none;
     z-index: 22;
+
     nav{
       display: block;
       position: absolute;
@@ -56,6 +60,27 @@
     input {
       width: 85%;
       height: 2em;
+    }
+    #cooperate, #PDF{
+      text-transform: none;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      &:hover:after{
+        visibility: hidden;
+
+      }
+    }
+    #PDF{
+      margin-left: 10px;
+      color: white;
+      background-color: #000;
+
+
+      span{
+        font-weight: 100;
+        font-size: 1.2em;
+      }
     }
   }
 
@@ -139,7 +164,7 @@
     justify-content: center;
     align-self: center;
     position: relative;
-    width: $mainWidth;
+    width: 95vw;
 
     img {
       object-fit: cover;
