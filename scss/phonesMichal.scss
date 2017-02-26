@@ -181,9 +181,16 @@ nav{
       bottom: 5em;
     }
     .mainSliderBoxContentText{
-      text-align: center;
+      width: 90%;
+      font-size: 2em;
+      border: 1px solid white;
+      text-transform: uppercase;
+      color: #ffffff;
       position: absolute;
-      bottom: 200em;
+      bottom: 50%;
+      transform: translateY(50%);
+      right: 5%;
+      padding: 0.1em;
     }
   }
   .sliderPrevious{

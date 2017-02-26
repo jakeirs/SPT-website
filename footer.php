@@ -4,7 +4,7 @@
         <!--<div class="slider-arrow prev"></div>
         <p class="partners--p">Partnerzy:</p>-->
         <div class="slider--arrowContainer">
-            <div class="slider-arrow prev"></div>
+            <div class="slider-arrow prev"><span class="sliderPrevFooter">&#8592</span> </div>
         </div>
         <div class="partners--sliderbox">   
             <p class="title">Partnerzy: </p>  
@@ -57,7 +57,7 @@
 
             </div>
         <div class="slider--arrowContainer">
-            <div class="slider-arrow next"></div>
+            <div class="slider-arrow next"><span class="sliderNextFooter">&#8594;</span> </div>
         </div>
     </div>
 </section>

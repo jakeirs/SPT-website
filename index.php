@@ -13,7 +13,7 @@
                           while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
                               <div class="mainSliderBoxContent">
                                    <?php the_post_thumbnail(); ?>
-                                   <div class="mainSliderBocContentText">
+                                   <div class="mainSliderBoxContentText">
                                      <p><?php the_content(); ?></p>
                                    </div>
                                 </div>
@@ -30,25 +30,27 @@
                <li><span>&#9654</span>Bacon ipsum dolor amet pork belly brisket pork loin, alcatra ball tip ribeye rump shankle. </li>
                <li><span>&#9654</span>Bacon ipsum dolor amet pork belly brisket pork loin, alcatra ball tip ribeye rump shankle. </li>
            </ul>
-           <div class="mainAboutArrow"><a>&#8594</a></div>
+           <div class="mainAboutArrow"><a href="o-spt">&#8594</a></div>
        </section>
        <section class="container mainImages">
            <div class="mainImagesWrapper">
                <div class="mainImagesEvents">
-                   <a href="projekty">
+                   <a href="wydarzenia">
                     <img class="mainImagesEventsLink" src="<?php bloginfo('template_directory')?>/img/icon-wydarzenia.svg">
                     <h3>Wydarzenia</h3>
                    </a> 
                </div>
                <div class="mainImagesProjects">
-                   <a href="wydarzenia">
+                   <a href="projekty">
                     <img class="mainImagesProjectsLink" src="<?php bloginfo('template_directory')?>/img/icon-projekty.svg">
                     <h3>Projekty</h3>
                    </a> 
                </div>
                <div class="mainImagesKnow">
-                   <img class="mainImagesKnowLink" src="<?php bloginfo('template_directory')?>/img/icon-wiedza.svg">
-                   <h3>Strefa wiedzy</h3>
+                   <a href="#">
+                        <img class="mainImagesKnowLink" src="<?php bloginfo('template_directory')?>/img/icon-wiedza.svg">
+                        <h3>Strefa wiedzy</h3>
+                   </a>
                </div>
 
            </div>
