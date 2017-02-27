@@ -12,6 +12,7 @@
 
 				if ( $your_loop->have_posts() ) : while ( $your_loop->have_posts() ) : $your_loop->the_post(); 
 				
+				
 		
 				get_template_part( 'content_projekty', get_post_format() );
 	

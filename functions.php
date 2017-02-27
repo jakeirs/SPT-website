@@ -272,37 +272,37 @@ add_action( 'init', 'create_projects_post' );
 
 //MAIN SLIDER PICTURES//
 
-function create_mainSlider_pictures() {
-	register_post_type( 'mainSlider_pictures',
-			array(
-			'labels' => array(
-					'name' => __( 'Mainpictures' ),
-					'singular_name' => __( 'Mainpictures' ),
-			),
-			'public' => true,
-			'has_archive' => true,
-			'supports' => array(
-                    'title',
-					'editor',
-					'thumbnail',
-			),
-//			'taxonomies'   => array(
-//				'post_tag',
-//			),
-			'show_ui' => true,
-			'show_in_menu' => true,
-			'show_in_nav_menus' => true,
-			'publicly_queryable' => true,
-			'exclude_from_search' => false,
-			'has_archive' => true,
-			'query_var' => true,
-			'can_export' => true,
-			'rewrite' => true,
-			'capability_type' => 'post'
-	));
+// function create_mainSlider_pictures() {
+// 	register_post_type( 'mainSlider_pictures',
+// 			array(
+// 			'labels' => array(
+// 					'name' => __( 'Mainpictures' ),
+// 					'singular_name' => __( 'Mainpictures' ),
+// 			),
+// 			'public' => true,
+// 			'has_archive' => true,
+// 			'supports' => array(
+//                     'title',
+// 					'editor',
+// 					'thumbnail',
+// 			),
+// //			'taxonomies'   => array(
+// //				'post_tag',
+// //			),
+// 			'show_ui' => true,
+// 			'show_in_menu' => true,
+// 			'show_in_nav_menus' => true,
+// 			'publicly_queryable' => true,
+// 			'exclude_from_search' => false,
+// 			'has_archive' => true,
+// 			'query_var' => true,
+// 			'can_export' => true,
+// 			'rewrite' => true,
+// 			'capability_type' => 'post'
+// 	));
 	
-}
-add_action( 'init', 'create_mainSlider_pictures' );
+// }
+// add_action( 'init', 'create_mainSlider_pictures' );
 
 function create_zespol_post() {
 	register_post_type( 'zespol_post',

@@ -7,7 +7,11 @@
        <time datetime=""><?php echo CFS()->get( 'data_projekty' );?></time>
        <p class="event--content-tags">
        
-        <?php the_tags(); ?></p>
+        <?php /* the_category();
+        $categories = get_categories();
+        var_dump($categories);*/
+         ?></p>
+
      </div>
   </div>
          
