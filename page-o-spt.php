@@ -10,6 +10,7 @@
              <?php 
                 $id=140; 
                 $post = get_post($id); 
+                edit_post_link(); 
                 $content = apply_filters('the_content', $post->post_content); 
                 echo $content;  
             ?>
@@ -45,8 +46,8 @@
 
     
     <div class="team--arrow-container row">
-        <div class="slider-arrow prev"></div>
-        <div class="slider-arrow next"></div>
+        <a><div class="slider-arrow prev">&#8592</div></a>
+        <a><div class="slider-arrow next">&#8594</div></a>
     </div>
 
 

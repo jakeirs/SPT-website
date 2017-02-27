@@ -2,12 +2,13 @@
     <section class="container mainSlider">
            <div class="sliderPrevious"><span>&#8592</span></div>
            <div class="container mainSliderBox">
-               <?php
+               <!--<?php /*
                   // wywołanie custom-post zdjęcia główne
                       $args =  array(
                           'post_type' => 'mainSlider_pictures',
                           'orderby' => 'menu_order',
-                          'order' => 'ASC'
+                          'order' => 'ASC',
+                          
                           );
                           $custom_query = new WP_Query( $args );
                           while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
@@ -16,6 +17,27 @@
                                    <div class="mainSliderBoxContentText">
                                      <p><?php the_content(); ?></p>
                                    </div>
+                                </div>
+                              <?php endwhile; */ ?>-->
+
+                    <?php
+                  // wywołanie wydarzenia_post
+                      $args =  array(
+                          'post_type' => 'event_post',                       
+                          'order' => 'DESC',   
+                          'orderby' => 'date',
+                          'posts_per_page' => 3,                       
+                          );
+                          $custom_query = new WP_Query( $args );
+                          while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
+                              <div class="mainSliderBoxContent">
+                                  
+                                  <a href="<?php the_permalink(); ?>">
+                                    <?php the_post_thumbnail(); ?>
+                                    <div class="mainSliderBoxContentText">
+                                        <p><?php echo CFS()->get( 'opis_wydarzenie' ); ?></p>
+                                    </div>
+                                  </a>
                                 </div>
                               <?php endwhile; ?>
 

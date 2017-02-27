@@ -8,7 +8,7 @@
         </div>
         <div class="partners--sliderbox">   
             <p class="title">Partnerzy: </p>  
-            <!--<img class="title" src="<?php bloginfo('template_directory');?>/img/SPT_partnerzy.jpg"/>-->
+           
              <?php 
               // wywołanie custom-post friends --> partnerzy
 				$args =  array( 
@@ -19,11 +19,20 @@
 				 $custom_query = new WP_Query( $args );
             while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
 
-                <?php the_post_thumbnail() ?>
+                <a href=<?php if (CFS()->get( 'link_footer' )) {
+                
+                        echo '"'. CFS()->get( 'link_footer' ).'" target="_blank"'; }
+                     
+                     else {
+                         echo '"#partners"';
+                     }
+                     ?> >
+                    <?php the_post_thumbnail() ?>
+                </a>
                 
 				<?php endwhile; ?>  
              <p class="title">Mecenat: </p>    
-                <!--<img class="title" src="<?php bloginfo('template_directory');?>/img/SPT_mecenat.jpg"/>-->
+                
                 <?php                  
                   // wywołanie custom-post mecenat
 				$args =  array( 
@@ -34,10 +43,19 @@
 				 $custom_query = new WP_Query( $args );
             while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
 
-                <?php the_post_thumbnail() ?>
+                <a href=<?php if (CFS()->get( 'link_footer' )) {
+                
+                        echo '"'. CFS()->get( 'link_footer' ).'" target="_blank"'; }
+                     
+                     else {
+                         echo '"#partners"';
+                     }
+                     ?> >
+                    <?php the_post_thumbnail() ?>
+                </a>
                 
 				<?php endwhile; ?>  
-                 <!--<img class="title" src="<?php bloginfo('template_directory');?>/img/SPT_sponsorzy.jpg"/>            -->
+                 
                 <p class="title">Współpraca: </p> 
                 <?php 
                 // wywołanie custom-post sponsory --> współpraca
@@ -49,8 +67,16 @@
 				 $custom_query = new WP_Query( $args );
             while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
 
-                <?php the_post_thumbnail() ?>
+                 <a href=<?php if (CFS()->get( 'link_footer' )) {
                 
+                        echo '"'. CFS()->get( 'link_footer' ).'" target="_blank"'; }
+                     
+                     else {
+                         echo '"#partners"';
+                     }
+                     ?> >
+                    <?php the_post_thumbnail() ?>
+                </a>
 				<?php endwhile; ?>  
                
                 
