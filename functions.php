@@ -31,7 +31,7 @@ $sponsory_args = array(
 	'hierarchical' => false,
 	'menu_position' => null,
 	'capability_type' => 'post',
-	'supports' => array('title', 'excerpt', 'editor', 'thumbnail'),
+	'supports' => array('title', 'editor', 'thumbnail'),
 	// 'menu_icon' => get_bloginfo('template_directory') . '/images/photo-album.png' //16x16 png if you want an icon
 ); 
 register_post_type('sponsory', $sponsory_args);
@@ -128,7 +128,7 @@ $friends_args = array(
 	'hierarchical' => false,
 	'menu_position' => null,
 	'capability_type' => 'post',
-	'supports' => array('title', 'excerpt', 'editor', 'thumbnail'),
+	'supports' => array('title', 'editor', 'thumbnail'),
 	// 'menu_icon' => get_bloginfo('template_directory') . '/images/photo-album.png' //16x16 png if you want an icon
 ); 
 register_post_type('friends', $friends_args);
@@ -176,7 +176,7 @@ $mecenat_args = array(
 	'hierarchical' => false,
 	'menu_position' => null,
 	'capability_type' => 'post',
-	'supports' => array('title', 'excerpt', 'editor', 'thumbnail'),
+	'supports' => array('title', 'editor', 'thumbnail'),
 	// 'menu_icon' => get_bloginfo('template_directory') . '/images/photo-album.png' //16x16 png if you want an icon
 ); 
 register_post_type('mecenat', $mecenat_args);
