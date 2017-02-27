@@ -5,7 +5,10 @@
 
     <h2>Wydarzenia</h2>
         <div class="events-more--wrapper"> 
-            <h1><?php the_title(); ?></h1>
+            
+
+            <h1><?php the_title(); ?></h1> <?php edit_post_link(); ?>
+            
             <p class="events-more--data"><?php echo CFS()->get( 'data_wydarzenie' );?></p>
 
             <p class="events-more--descript">

@@ -206,12 +206,11 @@ section#team, section#about {
 
 
 .team--arrow-container {
-  margin-top: 50px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   position: relative;
   width: 100%;
-  // height: 120px;
 }
 
 section#team .slider-arrow {
@@ -220,6 +219,7 @@ section#team .slider-arrow {
   height: 20px;
   margin: 0 20px;
   cursor: pointer;
+  font-size: 70px;
 }
 
 //.next{
