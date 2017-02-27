@@ -44,9 +44,9 @@
     </div>
 
     
-    <div class="team--arrow-container row">
-        <div class="slider-arrow prev"></div>
-        <div class="slider-arrow next"></div>
+    <div class="team--arrow-container">
+        <a class="prev">&#8592</a>
+        <a class="next">&#8594</a>
     </div>
 
 
