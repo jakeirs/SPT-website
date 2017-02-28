@@ -56,9 +56,15 @@
         </div>
 
   <?php  } ?> 
+
+    <div class="pagination-arrow--prev">
+		<?php previous_post_link('%link', '&laquo; Poprzedni projekt'); ?>
+	</div>
+	<div class="pagination-arrow--next">
+		<?php next_post_link('%link', 'Następny projekt &raquo;'); ?> 
+	</div>
   </section>
-<?php next_post_link('%link', 'Next post »'); ?>  <?php previous_post_link('%link', 'prev post »'); ?>
- 
+  
 
 <?php get_footer(); ?>
 

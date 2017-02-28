@@ -62,7 +62,14 @@
                  }
              }   ?>             
                  
-        </div>
+    </div>
+        <div class="pagination-arrow--prev">
+		    <?php previous_post_link('%link', '&laquo; Poprzednie wydarzenie'); ?>
+	 </div>
+	 <div class="pagination-arrow--next">
+		<?php next_post_link('%link', 'Następne wydarzenie &raquo;'); ?> 
+	</div>
+
 </section>
 <?php get_footer(); ?>
 
