@@ -223,7 +223,6 @@ function create_event_post() {
 			'show_in_nav_menus' => true,
 			'publicly_queryable' => true,
 			'exclude_from_search' => false,
-			'has_archive' => true,
 			'query_var' => true,
 			'can_export' => true,
 			'rewrite' => true,
@@ -332,5 +331,21 @@ function create_zespol_post() {
 	
 }
 add_action( 'init', 'create_zespol_post' );
+
+// FILTORWANIE TAGÓW
+
+function tags_filtring_custom_post_type( $query ) {
+    if( is_tag() && $query->is_main_query() ) {
+
+        // this gets all post types:
+        // $post_types = get_post_types();
+
+        // alternately, you can add just specific post types using this line instead of the above:
+        $post_types = array( 'post', 'event_post' );
+
+        $query->set( 'post_type', $post_types );
+    }
+}
+add_filter( 'pre_get_posts', 'tags_filtring_custom_post_type' );
 
 ?>

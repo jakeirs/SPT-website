@@ -17,8 +17,10 @@ a {
   color: #000;
   text-decoration: none; /* no underline */
 }
+$highlight-a: #a8a8a8;
+
 a:hover {
-  color: #a8a8a8;
+  color: $highlight-a;
 }
 
 @import "about";
@@ -33,6 +35,10 @@ section#events {
 .events--content {
   margin-top: calc(6vw + 10px); 
   vertical-align:top;
+    a:hover + .event--content-descrip h3 {
+      color: $highlight-a;
+    }
+
     h3 {
         margin-top: calc(2vw);        
     }
@@ -63,9 +69,7 @@ section#events {
       text-align: justify;
     }    
 }
-.events--content:hover h3 {
-      color: #a8a8a8; 
-    }
+
 
 @media screen and (min-width: 480px) {
   section#events {
