@@ -23,19 +23,20 @@
 <!----------- SECTION GALLERY ---------->
 <section id="events-gallery" class="container" >
 
-    
+        <?php $gallery_images = CFS()->get('galeria_zdjec_projekty'); ?>
+        <?php  if ($gallery_images) {
+                is_array($gallery_images); ?>
+
     <h2>Galeria</h2>
         <div class="events-gallery--wrapper"> 
-             <?php $gallery_images = CFS()->get('galeria_zdjec_projekty');
-                is_array($gallery_images);
-                    foreach ($gallery_images as $image) {
+           
+                <?php foreach ($gallery_images as $image) {
                         echo ' <a href="'.$image["galeria_projekty"].'" data-lightbox="slider-ex4"> <img src="'.$image["galeria_projekty"].'"/></a>';  
                     }
                  ?>
                 
-             
         </div>
-
+        <?php  } ?> 
 </section>
 <?php echo CFS()->get( 'data_wydarzenie' );?>
 <!----------- SECTION VIDEO ---------->
@@ -55,6 +56,8 @@
         </div>
 
   <?php  } ?> 
+  </section>
+<?php next_post_link('%link', 'Next post »'); ?>  <?php previous_post_link('%link', 'prev post »'); ?>
  
 
 <?php get_footer(); ?>

@@ -25,11 +25,11 @@ a:hover {
 
 @import "about";
     
-// ---------> section events <------------
+// ---------> section events/projekty <------------
 
 section#events {
   margin-top: 35px;
-  padding: 2vw;
+  // padding: 2vw;
 
   li {
     margin-right: 30px;
@@ -67,9 +67,9 @@ section#events {
       margin-right: auto;   
       height: 60vw;
       width: 90vw;
-      object-fit: contain;
+      object-fit: cover;
       border-radius: 30px;  
-      background-color: #000;    
+      // background-color: #000;    
     }
     .event--content-descrip {
       width: 90vw;
@@ -80,11 +80,27 @@ section#events {
     }    
 }
 
+div.pagination-arrow--prev,  div.pagination-arrow--next {  
+  margin-top: 20px;
+  display: inline-block; 
+  // width: 40%;
+  }
+
+div.pagination-arrow--next  {
+  float: right;
+  display: inline-block;  
+}
+div.pagination-arrow--next:after, div.pagination-arrow--next:before {
+  display: table;
+  content: '';
+  clear: both;
+}
+
 
 @media screen and (min-width: 480px) {
   section#events {
   padding: 0;
-  padding-left: 3vw;
+  // padding-left: 3vw;
 }
   .events--content {
     display: flex;
@@ -157,13 +173,13 @@ section#events {
         margin-left: auto;
         margin-right: auto;   
         height: 21vw;
-        width: 30vw;
+        width: 27vw;
         max-width: 358px;
         max-height: 253px;
         border-radius: 30px; 
       }
       .event--content-descrip {
-        width: 30vw;
+        width: 27vw;
         max-width: 341px;
         display: block;
         margin-left: auto;
@@ -209,7 +225,6 @@ section#events-more {
 
 section#events-gallery {
   margin-top: 40px;
-  padding: 3vw;
 }
 
 div.events-gallery--wrapper {  
@@ -218,22 +233,17 @@ div.events-gallery--wrapper {
    margin-right: auto;
    margin-top: 40px;
    display: block;
-   width: 91vw;
+   width: 90vw;
    height: 61vw;
-   object-fit: contain;
+   object-fit: cover;
    transition: all .5s ease-in-out;    
   }  
-    img:hover{
-      transform: scale(1.6);
-    }
-  
    
 }
 
 // ---------> section events-more video <------------
 section#events-video {
   margin-top: 40px;
-  padding: 3vw;
 }
 
 div.events-video--wrapper {   
@@ -267,6 +277,9 @@ div.events-video--wrapper {
           margin-right: 0;
         }      
       }
+      img:hover{
+      transform: scale(1.6);
+    }
   }
   section#events-video {
      margin-top: 40px;

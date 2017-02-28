@@ -5,21 +5,6 @@
 
     <h2>Projekty</h2></br></br>
 
-		<?php $args = array(
-					'post_type' => 'projekty_post',
-				  ); ?>
-
-   <?php  /*
-    $args1 = array(
-      'orderby' => 'id',
-      'hide_empty'=> 1,      
-  );
-  $categories = get_categories($args1);
-  foreach ($categories as $cat) {
-        echo "<p class='categories'>". $cat->name . "</p>";
-    } */
-?>
-
 <?php
 
 	$args_cat = array(
@@ -27,23 +12,43 @@
 		'title_li' => '',
 	);
 
-wp_list_categories($args_cat);
+	wp_list_categories($args_cat); ?>
 			
-		//  get_categories();
-			
-			// var_dump(get_categories()); //  ?>
+		<div class="events--box"> 
 
-		<div class="events--box">  
+	<?php 
+	$currentPage = get_query_var('paged');
+	
+	$args = array(
+		'post_type' => 'projekty_post',
+		'posts_per_page' => 9,
+		'paged' => $currentPage,
+		);
+	 ?> 
 			 
-		<?php		$your_loop = new WP_Query( $args ); 
+			<?php	$your_loop = new WP_Query( $args ); 
 
 				if ( $your_loop->have_posts() ) : while ( $your_loop->have_posts() ) : $your_loop->the_post(); 
 		
 				get_template_part( 'content_projekty', get_post_format() );
-	
-			endwhile; endif; ?>				
+
+			 ?>
+		<?php 	endwhile; 
+		?>
+			
+			<?php endif; 
+			wp_reset_postdata();?>				
 		</div>
-		</section>
+		<div class="pagination-arrow--prev">
+			<?php	previous_posts_link('&laquo; Poprzednia Strona'); ?>
+		</div>
+		<div class="pagination-arrow--next">
+			<?php next_posts_link(' Następna Strona &raquo;', $your_loop->max_num_pages); ?>
+		</div>
+	</section>
+	
+
+
 	<?php } ?>
 			
 <?php get_footer(); ?>
