@@ -30,6 +30,15 @@ a:hover {
 section#events {
   margin-top: 35px;
   padding: 2vw;
+
+  li {
+    margin-right: 30px;
+    display: inline-block;
+    list-style: none;
+    text-decoration: underline;
+    font-size: 1.1em;
+    font-style: italic;
+  }
 }
 
 .events--content {
@@ -50,6 +59,7 @@ section#events {
 
     p.event--content-tags {     
       margin-top: 4px;
+      font-style: italic;
     } 
      img {
       display: block;

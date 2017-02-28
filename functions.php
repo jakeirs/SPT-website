@@ -348,4 +348,20 @@ function tags_filtring_custom_post_type( $query ) {
 }
 add_filter( 'pre_get_posts', 'tags_filtring_custom_post_type' );
 
+// FILTORWANIE KATEGORII
+
+function category_filtring_custom_post_type( $query ) {
+    if( is_category() && $query->is_main_query() ) {
+
+        // this gets all post types:
+        // $post_types = get_post_types();
+
+        // alternately, you can add just specific post types using this line instead of the above:
+        $post_types = array( 'post', 'projekty_post' );
+
+        $query->set( 'post_type', $post_types );
+    }
+}
+add_filter( 'pre_get_posts', 'category_filtring_custom_post_type' );
+
 ?>
