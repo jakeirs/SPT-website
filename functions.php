@@ -364,4 +364,34 @@ function category_filtring_custom_post_type( $query ) {
 }
 add_filter( 'pre_get_posts', 'category_filtring_custom_post_type' );
 
+// ADRESY 
+
+function create_address_post() {
+	register_post_type( 'address_post',
+			array(
+			'labels' => array(
+					'name' => __( 'Adresy' ),
+					'singular_name' => __( 'Adres' ),
+			),
+			'public' => true,
+			'has_archive' => true,
+			'supports' => array(
+					'title',
+					'editor',
+			),			
+			'show_ui' => true,
+			'show_in_menu' => true,
+			'show_in_nav_menus' => true,
+			'publicly_queryable' => true,
+			'exclude_from_search' => false,
+			'has_archive' => true,
+			'query_var' => true,
+			'can_export' => true,
+			'rewrite' => true,
+			'capability_type' => 'post'
+	));
+	
+}
+add_action( 'init', 'create_address_post' );
+
 ?>

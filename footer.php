@@ -95,20 +95,32 @@
     
    <!--<iframe class="iframe--googlemap" allowfullscreen frameborder="0" src="https://www.google.pl/maps/place/Lubelska+30%2F32,+Warszawa/@52.2501874,21.048715,17z/data=!3m1!4b1!4m5!3m4!1s0x471ecc4a2fca56d9:0x78d28479056bfa78!8m2!3d52.2501841!4d21.0509037">
    </iframe>-->
-   <div class="div--contact">
+<?php  $args = array(
+		'post_type' => 'address_post',
+		'posts_per_page' => 2, 
+        'order' => 'ASC',       
+		);
+	 ?> 
+    <div class="div--contact">
+     <?php	$your_loop = new WP_Query( $args ); 
+
+				if ( $your_loop->have_posts() ) : while ( $your_loop->have_posts() ) : $your_loop->the_post(); ?>
+
+   
         <p class="p--contact-heading">
-            Stowarzyszenie Pedagogów Teatru
+            <?php the_title(); ?>
         </p>
         <p class="p--contact-tiny">
-            ul. Racławicka 103/1 <br>
-            02-634 Warszawa <br>
-            NIP 521 358 2589 <br>
-            numer KRS  0000355169 <br>
-            regon  142611162 <br>
-            konto  BZ BWK S.A. 98 1090 1694 0000 0001 1493 6705
+          
+			 <?php the_content(); ?>
+			
+		<?php 	endwhile; 
+		?>
+			
+			<?php endif; 
+			wp_reset_postdata();?>		
         </p>
-        <p class="p--contact-tiny">pedagodzyteatru@gmail.com</p>
-        <div class="div--contact-svg"></div>
+        <!--<div class="div--contact-svg"></div>-->
     </div>
 
 </section>
