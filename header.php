@@ -27,8 +27,8 @@
 <header>
         <div class="container headerSearchbar">
             <div class="hamburger"><span>&#9776</span></div>
-            <input>
-            <img class="magnifyingGlass" src="<?php bloginfo('template_directory');?>/img/magnifying-glass.svg" </img>
+            <?php get_search_form(); ?>
+            <img class="magnifyingGlass" src="<?php bloginfo('template_directory');?>/img/magnifying-glass.svg" />
         </div>
         <div id="mobileMenu" class="mobileMenuWrapper">
             <nav class="container">
@@ -36,7 +36,7 @@
                     <?php wp_list_pages( '&title_li=' ); ?>
                     <li class="navigationCooperate"><a id="cooperate">Współpracuj z nami!</a><a id="PDF"><span>&#10515</span> PDF</a></li>
                     <li class="navigationPDF"></li>
-                    <li><input placeholder="Wyszukaj..."></li>
+                    <li><?php get_search_form(); ?></li>
                 </ul>
             </nav>
 

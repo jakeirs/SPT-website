@@ -17,7 +17,6 @@
       right: 7em;
       bottom: 0.3em;
     }
-
     input {
       width: 50%;
       height: 2em;
@@ -28,6 +27,13 @@
         outline: none;
       }
     }
+form {
+  width: 500px;
+    line-height: 2em;
+    display: flex;
+    align-items: center;      
+}
+
   }
   .mobileMenuWrapper{
     display: none;

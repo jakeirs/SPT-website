@@ -2,7 +2,7 @@
 
 // Support Featured Images
 add_theme_support( 'post-thumbnails' );
-
+add_theme_support('html5', array('search-form'));
 add_image_size( 'admin-list-thumb', 80, 80, true); //admin thumbnail (sprobuj usunąć jeśli nic nie zmienia)
 
 // Galeria sponsorzy --> współpraca POCZĄTEK
@@ -31,6 +31,7 @@ $sponsory_args = array(
 	'hierarchical' => false,
 	'menu_position' => null,
 	'capability_type' => 'post',
+	'exclude_from_search' => true,
 	'supports' => array('title', 'editor', 'thumbnail'),
 	// 'menu_icon' => get_bloginfo('template_directory') . '/images/photo-album.png' //16x16 png if you want an icon
 ); 
@@ -127,6 +128,7 @@ $friends_args = array(
 	'rewrite' => true,
 	'hierarchical' => false,
 	'menu_position' => null,
+	'exclude_from_search' => true,
 	'capability_type' => 'post',
 	'supports' => array('title', 'editor', 'thumbnail'),
 	// 'menu_icon' => get_bloginfo('template_directory') . '/images/photo-album.png' //16x16 png if you want an icon
@@ -175,6 +177,7 @@ $mecenat_args = array(
 	'rewrite' => true,
 	'hierarchical' => false,
 	'menu_position' => null,
+	'exclude_from_search' => true,
 	'capability_type' => 'post',
 	'supports' => array('title', 'editor', 'thumbnail'),
 	// 'menu_icon' => get_bloginfo('template_directory') . '/images/photo-album.png' //16x16 png if you want an icon
@@ -321,7 +324,7 @@ function create_zespol_post() {
 			'show_in_menu' => true,
 			'show_in_nav_menus' => true,
 			'publicly_queryable' => true,
-			'exclude_from_search' => false,
+			'exclude_from_search' => true,
 			'has_archive' => true,
 			'query_var' => true,
 			'can_export' => true,
@@ -383,7 +386,7 @@ function create_address_post() {
 			'show_in_menu' => true,
 			'show_in_nav_menus' => true,
 			'publicly_queryable' => true,
-			'exclude_from_search' => false,
+			'exclude_from_search' => true,
 			'has_archive' => true,
 			'query_var' => true,
 			'can_export' => true,

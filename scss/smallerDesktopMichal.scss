@@ -24,6 +24,13 @@
       display: none;
 
     }
+    form {
+    width: $mainWidth;
+    line-height: 2em;
+    display: flex;
+    align-items: center;      
+}
+
   }
   .mobileMenuWrapper{
     width: 100vw;
