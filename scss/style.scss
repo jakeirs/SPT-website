@@ -17,7 +17,7 @@ a {
   color: #000;
   text-decoration: none; /* no underline */
 }
-$highlight-a: #a8a8a8;
+$highlight-a: #8C8C8C;
 
 a:hover {
   color: $highlight-a;
@@ -238,7 +238,6 @@ div.events-gallery--wrapper {
    object-fit: cover;
    transition: all .5s ease-in-out;    
   }  
-   
 }
 
 // ---------> section events-more video <------------
@@ -256,6 +255,28 @@ div.events-video--wrapper {
    height: 61vw;    
   }    
 }
+
+// ---------> section events-more patroni wydarzenia <------------
+section > h3 {
+  border-bottom: 6px solid #000;
+  display: inline;
+  text-transform: uppercase;
+  font-size: 22px;  
+}
+
+div.events-patrons--wrapper {  
+   img {  
+   margin-right: 15px;
+   margin-top: 40px;
+   display: inline-block;
+   width: auto;
+   max-width: 80vw;
+   height: 30vw;
+   object-fit: contain;
+  }  
+}
+
+
 @import 'phonesMichal.scss';
 
 @media screen and (min-width: 480px) {
@@ -300,6 +321,19 @@ div.events-video--wrapper {
           }      
         }
     }
+
+    div.events-patrons--wrapper {  
+      img {  
+      margin-right: 15px;
+      margin-top: 40px;
+      display: inline-block;
+      width: auto;
+      max-width: 34vw;
+      height: 18vw;
+      object-fit: contain;
+      transition: all .5s ease-in-out;    
+      }  
+}
 }
 @import 'tabletsMichal.scss';
 
@@ -351,7 +385,19 @@ div.events-video--wrapper {
           margin-right: 0;
         }      
       }
-  }
+}
+ div.events-patrons--wrapper {  
+      img {  
+      margin-right: 25px;
+      margin-top: 40px;
+      display: inline-block;
+      width: auto;
+      max-width: 300px;
+      height: 120px;
+      object-fit: contain;
+      transition: all .5s ease-in-out;    
+      }  
+}
 }
 @import 'smallerDesktopMichal';
 
