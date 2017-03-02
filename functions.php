@@ -397,4 +397,11 @@ function create_address_post() {
 }
 add_action( 'init', 'create_address_post' );
 
+function youTube_link_replace($someString) {		
+	$newString =  str_replace('watch?v=', 'embed/', $someString);	
+	return $newString;
+}
+
+add_action( 'init', 'youTube_link_replace' );
+
 ?>

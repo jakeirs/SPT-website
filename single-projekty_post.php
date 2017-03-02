@@ -46,8 +46,13 @@
         <div class="events-video--wrapper"> 
         <?php $gallery_video = CFS()->get('galeria_wideo_projekty');
                 is_array($gallery_video);
+                
+                
                     foreach ($gallery_video as $video) {
-                        echo ' <iframe width="420" height="315" allowfullscreen="allowfullscreen" src="'.$video["wideo_projekty"].'" ></iframe>';  
+
+                        $link = youTube_link_replace($video["wideo_projekty"]);
+                
+                        echo ' <iframe width="420" height="315" allowfullscreen="allowfullscreen" src="'.$link.'" ></iframe>';  
                  } ?> 
                      
             </div>

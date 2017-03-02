@@ -1,5 +1,7 @@
 <?php get_header(); ?>
-
+	<?php 
+	 
+	?>
 	<?php if (is_page( 'Projekty' )) { ?>
 		<section id="events" class="container" >
 

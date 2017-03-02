@@ -40,7 +40,7 @@
 
 <!----------- SECTION VIDEO ---------->
 
-    <?php $gallery_video = CFS()->get('galeria_wideo_wydarzenia'); ?>
+    <?php $gallery_video = CFS()->get('galeria_wideo_wydarzenie'); ?>
     <?php  if ($gallery_video) { ?>
 
 <section id="events-video" class="container" >
@@ -51,7 +51,10 @@
            
                <?php is_array($gallery_video);
                     foreach ($gallery_video as $video) {
-                        echo ' <iframe width="420" height="315" allowfullscreen="allowfullscreen" src="'.$video["wideo_wydarzenia"].'" ></iframe>';  
+
+                        $link = youTube_link_replace($video["wideo_wydarzenie"]);
+                
+                        echo ' <iframe width="420" height="315" allowfullscreen="allowfullscreen" src="'.$link.'" ></iframe>';  
                  } ?> 
                            
                  
