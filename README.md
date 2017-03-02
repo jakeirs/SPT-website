@@ -10,4 +10,4 @@ Website for non-profit organization "Stowarzyszenie Pedagogów Teatru" based on 
 - gallery of images/videos/sponsorship
 * resposive design
 
-[Launch demo](http://79.170.40.40/meerfi.com/12-twitter/)
+
