@@ -12,4 +12,11 @@ Website for non-profit organization "Stowarzyszenie Pedagogów Teatru" based on 
 
 [Launch demo](http://79.170.40.40/meerfi.com/spt/)
 
+[Login as admin to see back-end](http://79.170.40.40/meerfi.com/spt/wp-admin)
+
+Feel free to mess around with WP admin
+
+**username:** admin
+**password:** admin
+
 
