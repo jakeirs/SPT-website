@@ -8,10 +8,13 @@
         <p class="about--p">
 
              <?php 
-                $id=140; 
-                $post = get_post($id); 
-                $content = apply_filters('the_content', $post->post_content); 
-                echo $content;  
+
+             $page = get_page_by_path( 'o-spt' );
+                
+             $content = apply_filters('the_content', $post->post_content); 
+                
+            echo $content;  
+            
             ?>
 
         </p>
